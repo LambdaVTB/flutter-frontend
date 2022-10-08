@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vtb_frontend/CodeAssept.dart';
 import 'package:vtb_frontend/SecondScreen.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -50,7 +51,7 @@ class RegistrationScreenState extends State<RegistrationScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const SecondScreen()),
+                              builder: (context) => CodeAsseptScreen()),
                         );
                       },
                       child: Container(
