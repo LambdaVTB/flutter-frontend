@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vtb_frontend/CodeAssept.dart';
-import 'package:vtb_frontend/SecondScreen.dart';
+
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);

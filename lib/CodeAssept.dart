@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vtb_frontend/InterestsScreen.dart';
 import 'package:vtb_frontend/SecondScreen.dart';
 
 class CodeAsseptScreen extends StatefulWidget {
@@ -57,7 +58,7 @@ class CodeAsseptState extends State<CodeAsseptScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const SecondScreen()),
+                          builder: (context) => const InterestsScreen()),
                     );
                   },
                   child: Container(
