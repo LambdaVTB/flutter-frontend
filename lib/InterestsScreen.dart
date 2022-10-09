@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vtb_frontend/HomePage.dart';
 import 'package:vtb_frontend/custom_button.dart';
+import 'package:vtb_frontend/custom_navigation_bar.dart';
 
 
 class InterestsScreen extends StatefulWidget {
@@ -61,7 +63,11 @@ class InterestsScreenState extends State<InterestsScreen> {
                 ],
               ),
               Spacer(),
-              CustomButton(text: "Продолжить"),
+              CustomButton(text: "Продолжить", onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => CustomNavigationBar()),
+              ),),
               SizedBox(height: 20,)
             ],
           ),
@@ -79,19 +85,19 @@ class InterestsScreenState extends State<InterestsScreen> {
 
         },
         child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Image.asset('assets/$image.png'),
-              Text(
-                text,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: 'PFDinTextPro-Regular'
-                ),
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset('assets/$image.png'),
+            Text(
+              text,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Colors.black,
+                  fontFamily: 'PFDinTextPro-Regular'
               ),
-            ],
-          ),
+            ),
+          ],
+        ),
       ),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.black),

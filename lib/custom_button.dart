@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({Key? key, required this.text}) : super(key: key);
+  const CustomButton({Key? key, required this.text, required this.onTap}) : super(key: key);
 
   final String text;
+  final GestureTapCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-      },
+      onTap: onTap,
       child: Container(
         child: Align(
           alignment: Alignment.center,
